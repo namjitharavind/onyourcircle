@@ -11,7 +11,7 @@ class LoginFormFilter extends InputFilter{
        
                 
         $this->add(array(
-            'name' => 'user_email',
+            'name' => 'email',
             'required' => true,
             'filters' => array(
                 array('name' => 'StringTrim'),
@@ -31,7 +31,7 @@ class LoginFormFilter extends InputFilter{
         );
         
        $this->add(array(
-            'name' => 'user_password',
+            'name' => 'password',
             'required' => true,
         ));
         

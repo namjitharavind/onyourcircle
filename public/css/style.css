@@ -35,7 +35,7 @@ div.container a.brand {
     margin-left: 0;
     padding: 8px 20px 12px 40px;
 }
-
+/* Login page */
 .col-centered{
     float: none;
     margin: 0 auto;
@@ -49,4 +49,10 @@ div.container a.brand {
     color: #333;
     border: 1px solid #e5e5e5;
     box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px; 
+}
+ul{
+    list-style: none;
+}
+#system_email_error,#system_password_error{
+    display:none;
 }

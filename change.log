@@ -1,0 +1,4 @@
+8/6/2014
+=========
+ALTER TABLE `onyourcircle`.`system_login_master` 
+ADD COLUMN `user_status` TINYINT UNSIGNED NULL DEFAULT 0 AFTER `deleted`;

@@ -5,18 +5,19 @@ use Zend\Form\Form;
 
 class LoginForm extends Form {
    public function __construct($name = null) {
-       parent::__construct("Login");
+       parent::__construct("loginForm");
        $this->setAttribute('method', 'post');
        $this->setAttribute('enctype', 'multipart/formdata');
        
              
        
        $this->add(array(
-            'name' => 'user_email',
+            'name' => 'email',
             'attributes' => array(
                 'type' => 'email',
                 'class'=>'form-control',
-                'required' => 'required'
+                'required' => 'required',
+                'id'=>'system_email'
             ), 'options' => array(
                 'label' => 'Email',
                
@@ -27,10 +28,11 @@ class LoginForm extends Form {
        
        
         $this->add(array(
-            'name' => 'user_password',
+            'name' => 'password',
             'attributes' => array(
                 'type' => 'password',
-                'class'=>'form-control'
+                'class'=>'form-control',
+                'id'=>'system_password'
             ),
             'options' => array(
                 'label' => 'Password',
