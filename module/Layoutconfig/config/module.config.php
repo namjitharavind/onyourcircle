@@ -15,25 +15,24 @@
  * **************************************************************************************************** */
 return array(
     'view_manager' => array(
-            'template_path_stack' => array(
-             'user' => 'module/User/view',
-   
+        'template_path_stack' => array(
+            'user' => 'module/User/view',
         ),
         'template_map' => array(
             'layout/user.login.layout' => 'module/Layoutconfig/view/layout/user.login.layout.phtml',
-           
+            'layout/admin.layout' => 'module/Layoutconfig/view/layout/admin.layout.phtml',
         ),
     ),
     'module_layouts' => array(
         'User' => array(
-                'admin' => array(
+            'admin' => array(
                 'default' => 'layout/user.login.layout',
                 'login' => 'layout/user.login.layout',
+            ),
+            'dashboard' => array(
+                'default' => 'layout/admin.layout',
             )
         ),
-       
-       
-        
     ),
 );
 ?>

@@ -4,6 +4,7 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'User\Controller\Admin' => 'User\Controller\AdminController',
+            'User\Controller\Dashboard' => 'User\Controller\DashboardController',
         ),
     ),
     'router' => array(
@@ -14,7 +15,7 @@ return array(
                     'route' => '/',
                     'defaults' => array(
                         '__NAMESPACE__' => 'User\Controller',
-                        'controller' => 'Admin',
+                        'controller' => 'Application',
                         'action' => 'index',
                     ),
                 ),
